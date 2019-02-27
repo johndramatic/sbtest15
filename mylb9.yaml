@@ -15,10 +15,10 @@ import-stylebooks:
     version: "10.5"
     
 parameters-default-sources:
-  - cmtypes::lbname7
-  - cmtypes::lbip7
-  - cmtypes::lbport7
-  - cmtypes::lbsvctype7
+  - cmtypes::lbname9
+  - cmtypes::lbip9
+  - cmtypes::lbport9
+  - cmtypes::lbsvctype9
 
 
 components: 
