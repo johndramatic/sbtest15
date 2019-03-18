@@ -1,5 +1,5 @@
 --- 
-name: lbsvctype9
+name: lbsvctype11
 namespace: com.citrix.adc.commontypes
 version: "1.0"
 private: true
