@@ -1,0 +1,34 @@
+--- 
+name: mylb-mon
+namespace: com.citrix.adc.stylebooks
+version: "1.0"
+description: "This stylebook defines a typical Load Balanced Application configuration with monitors."
+display-name: "HTTP/SSL LoadBalancing (with Monitors) StyleBook"
+schema-version: "1.0"
+import-stylebooks: 
+  - 
+    namespace: netscaler.nitro.config
+    prefix: ns
+    version: "10.5"
+  - 
+    namespace: com.citrix.adc.commontypes
+    prefix: cmtypes
+    version: "1.0"
+
+parameters-default-sources:
+  - cmtypes::mylb11
+
+parameters:
+  -
+    name: monitors
+    label: "List of Monitors"
+    description: "List of Monitors to monitor Application Servers"
+    type: cmtypes::monitor[]
+substitutions:
+  mon-name(appname, monname): $appname + "-mon-" + $monname
+components: 
+  - 
+    name: lb-comp
+    type: cmtypes::mylb11 
+    properties-default-sources:
+      - $parameters
