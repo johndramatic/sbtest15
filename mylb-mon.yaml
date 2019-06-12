@@ -1,7 +1,7 @@
 --- 
 name: mylb-mon
 namespace: com.citrix.adc.stylebooks
-version: "1.3"
+version: "1.4"
 description: "This stylebook defines a typical Load Balanced Application configuration with monitors."
 display-name: "HTTP/SSL LoadBalancing (with Monitors) StyleBook"
 schema-version: "1.0"
