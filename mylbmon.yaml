@@ -16,7 +16,7 @@ import-stylebooks:
     version: "1.0"
 
 parameters-default-sources:
-  - cmtypes::mylb11
+  - cmtypes::mylb15
 
 parameters:
   -
@@ -29,6 +29,6 @@ substitutions:
 components: 
   - 
     name: lb-comp
-    type: cmtypes::mylb11 
+    type: cmtypes::mylb15 
     properties-default-sources:
       - $parameters
