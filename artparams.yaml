@@ -4,7 +4,7 @@ namespace: netscaler.nitro.config
 schema-version: "1.0"
 version: "11.0"
 private: true
-builtin: true
+deprecate: true
 parameters: 
   -
     name: usernamefield
